@@ -1,0 +1,42 @@
+[
+    {
+        "time": "01 Feb 2023, 6:28:17 pm",
+        "prod_name": "Мышка",
+        "action": "add"
+    },
+    {
+        "time": "01 Feb 2023, 6:28:18 pm",
+        "prod_name": "Ноутбук",
+        "action": "add"
+    },
+    {
+        "time": "01 Feb 2023, 6:28:20 pm",
+        "prod_name": "Ноутбук",
+        "action": "change"
+    },
+    {
+        "time": "01 Feb 2023, 6:28:20 pm",
+        "prod_name": "Ноутбук",
+        "action": "change"
+    },
+    {
+        "time": "01 Feb 2023, 6:28:25 pm",
+        "prod_name": "Ноутбук",
+        "action": "change"
+    },
+    {
+        "time": "01 Feb 2023, 6:28:26 pm",
+        "prod_name": "Ноутбук",
+        "action": "change"
+    },
+    {
+        "time": "01 Feb 2023, 6:28:27 pm",
+        "prod_name": "Ноутбук",
+        "action": "remove"
+    },
+    {
+        "time": "01 Feb 2023, 6:28:27 pm",
+        "prod_name": "Мышка",
+        "action": "remove"
+    }
+]
