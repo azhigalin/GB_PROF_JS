@@ -1,0 +1,42 @@
+{
+  "name": "7dz",
+  "version": "1.0.0",
+  "description": "",
+  "app": "index.js",
+  "scripts": {
+    "buildDev": "del dist && webpack --mode development --config webpack.server.config.js && webpack --mode development --config webpack.dev.config.js",
+    "buildProd": "del dist && webpack --mode production --config webpack.server.config.js && webpack --mode production --config webpack.prod.config.js",
+    "start": "nodemon dist/server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "nodemonConfig": {
+    "ignore": [
+      "*.json"
+    ]
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "express": "^4.18.2",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.3",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "style-loader": "^3.3.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
