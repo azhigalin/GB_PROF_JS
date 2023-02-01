@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+button,
+input,
+textarea {
+    line-height: normal;
+    text-transform: none;
+    cursor: pointer;
+}
+
+hr {
+    opacity: 0.4;
+    border: 1px solid #EAEAEA;
+    width: 100%;
+}
+
+.fas,
+input,
+svg {
+    cursor: pointer;
+}
+
+input:focus-within {
+    outline: 1px solid transparent;
+}
+
+[type="text"]:hover,
+[type="email"]:hover,
+[type="password"]:hover,
+[type="radio"]:hover,
+[type="text"]:focus,
+[type="email"]:focus,
+[type="password"]:focus,
+[type="radio"]:focus {
+    outline: 1px solid #0f0f0f;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+details>summary {
+    list-style: none;
+}
+
+summary,
+input {
+    border: 0;
+    outline: none;
+}
+
+summary:hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-family: sans-serif;
+    font-style: normal;
+    color: #222222;
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: bisque;
+    padding: 35px 75px;
+    min-height: 75px;
+}
+
+.logo {
+    font-weight: 400;
+    font-size: 25px;
+    color: black;
+}
+
+.cart-button {
+    display: block;
+    max-width: 150px;
+    min-height: 20px;
+    padding: 5px 15px;
+    background-color: bisque;
+    border: 1px solid #2f2a2d;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+    border-radius: 15px;
+}
+
+.cart-button:hover {
+    background-color: #2f2a2d;
+    color: bisque;
+}
+
+.products-list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 20px;
+    margin-top: 75px;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    gap: 28px;
+}
+
+.btn-add, .del-btn {
+    display: block;
+    max-width: 150px;
+    min-height: 20px;
+    padding: 5px 20px;
+    background-color: bisque;
+    border: 1px solid #2f2a2d;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+    border-radius: 15px;
+}
+
+.btn-add:hover, .del-btn:hover{
+    background-color: #2f2a2d;
+    color: bisque;
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+.cart{
+    position: relative;
+}
+.cart-block{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.62);
+    border-radius: 5px;
+    box-sizing: border-box;
+    right: 0;
+    top: 130%;
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    color: black;
+    width: 300px;
+}
+
+.invisible{
+    display: none;
+}
+
+.cart-block:before{
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -10px;
+    right: 35px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+}
+.cart-item:not(:last-child){
+    margin-bottom: 20px;
+}
+.product-bio{
+    display: flex;
+}
+.cart-item img{
+    align-self: flex-start;
+    margin-right: 15px;
+}
+.product-single-price{
+    color: #474747;
+    font-size: 0.5em;
+}
+.product-price{
+    margin-left: 30px;
+}
+.product-desc{
+    max-width: 150px;
+}
+.product-quantity {
+    margin-top: 15px;
+    font-size: 0.75em;
+}
+.right-block{
+    text-align: right;
+}
+.btn-search {
+    background-color: transparent;
+    border: none;
+    color: #fafafa;
+    font-size: 1.2em;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+}
+.search-form{
+    position: relative;
+    margin-right: 50px;
+    display: inline-block;
+}
+.search-field:focus{
+    outline: none;
+}
+.search-field {
+    box-sizing: border-box;
+    width: 200px;
+    color: #fafafa;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fafafa;
+}
